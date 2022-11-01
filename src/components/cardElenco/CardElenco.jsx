@@ -11,7 +11,7 @@ export function CardElenco({ator}){
 
     return(
         <div className="cardElenco">
-            <img src={ator.foto}/>
+            <img alt="foto do ator" src={ator.foto}/>
             <span className="ator">{ator.nome}</span>
             <span className="personagem">{ator.personagem}</span>
             <button onClick={gostar}>{like}<ThumbUpOffAltIcon  /></button>
