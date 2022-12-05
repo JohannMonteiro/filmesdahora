@@ -1,6 +1,6 @@
 import './CardElenco.css'
 import {useState} from "react";
-import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 
 export function CardElenco({ator}){
     let [like, setLike] = useState(0)
@@ -14,7 +14,8 @@ export function CardElenco({ator}){
             <img alt="foto do ator" src={ator.foto}/>
             <span className="ator">{ator.nome}</span>
             <span className="personagem">{ator.personagem}</span>
-            <button onClick={gostar}>{like}<ThumbUpOffAltIcon  /></button>
+            <button onClick={gostar}><FavoriteBorderOutlinedIcon /></button>
+            <span>{like}</span>
         </div>
     )
 
