@@ -5,7 +5,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 export function CardFilme({filme}){
     const[favorito,setFavorito] = useState(false)
-    const poster ="https://image.tmdb.org/t/p/w200/" + filme.poster_patch
+    const poster ="https://image.tmdb.org/t/p/w200/" + filme.poster_path
 
     function favoritar(){
         setFavorito(!favorito)
